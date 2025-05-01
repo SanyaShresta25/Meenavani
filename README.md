@@ -22,24 +22,6 @@ A comprehensive MERN stack application for fishers with weather forecasts, fish 
 - **JWT**: For secure authentication
 - **Tailwind CSS**: For styling with a focus on the ocean/fishing theme
 
-## Project Structure
-
-\`\`\`
-meenavani/
-├── client/                 # React frontend
-│   ├── public/             # Static files
-│   └── src/                # React source code
-│       ├── components/     # UI components
-│       ├── pages/          # Page components
-│       ├── context/        # React context
-│       └── utils/          # Utility functions
-├── models/                 # Mongoose models
-├── routes/                 # Express routes
-├── middleware/             # Express middleware
-├── uploads/                # Uploaded images
-├── server.js               # Express server
-└── package.json            # Project dependencies
-\`\`\`
 
 ## Workflow
 
@@ -81,41 +63,27 @@ meenavani/
    - Market price analysis
    - Forecast accuracy
 
-## Installation
 
-1. Clone the repository:
-   \`\`\`
-   git clone https://github.com/yourusername/meenavani.git
-   cd meenavani
-   \`\`\`
+## 🧰 Installation
 
-2. Install server dependencies:
-   \`\`\`
-   npm install
-   \`\`\`
+1. **Clone the repository**:
+```bash
+git clone https://github.com/SanyaShresta25/Meenavani.git
+cd meenavani
 
-3. Install client dependencies:
-   \`\`\`
-   cd client
-   npm install
-   \`\`\`
+---
 
-4. Create a `.env` file in the root directory with:
-   \`\`\`
-   MONGODB_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret
-   \`\`\`
+## 🤝 Contributing
 
-5. Run the development server:
-   \`\`\`
-   # In the root directory
-   npm run dev
-   \`\`\`
+Contributions are welcome!  
+Feel free to fork the repo and submit a pull request with your improvements.
 
-## Contributing
+---
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+## 📄 License
 
-## License
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
-This project is licensed under the MIT License.
+---
+
+### 🧑‍💻 Made with ❤️ by **Sanya Shresta**
