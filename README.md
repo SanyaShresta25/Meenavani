@@ -1,89 +1,97 @@
-# Meenavani - Voice of the Fishers
 
-A comprehensive MERN stack application for fishers with weather forecasts, fish identification, market access, and safety alerts.
+# 🎣 Meenavani - Voice of the Fishers
 
-## Features
+A comprehensive **MERN stack** application designed for coastal fishers with weather forecasts, fish identification, market access, and safety alerts.
 
-- 🐟 **Fish Image Classification**: CNN-based model for identifying fish species from images
-- ☁️ **Weather Forecast**: Marine weather data with forecasts, tides, and fishing conditions
-- 🛒 **Fish Market**: Platform for fishers to list their catch and buyers to purchase
-- ⚠️ **Safety Alerts**: Real-time alerts for weather warnings and marine conditions
-- 📚 **Fish Library**: Comprehensive database of fish species with details
-- 📊 **Analytics**: Insights on catch trends, market prices, and fishing forecasts
-- 🔐 **User Authentication**: Secure login and registration system
+---
 
-## Tech Stack
+## 🌟 Features
 
-- **MongoDB**: Database for storing user data, fish information, market listings, and alerts
-- **Express**: Backend framework for handling API requests
-- **React**: Frontend library for building the user interface
-- **Node.js**: Runtime environment for the backend
-- **TensorFlow.js**: For the fish classification CNN model
-- **JWT**: For secure authentication
-- **Tailwind CSS**: For styling with a focus on the ocean/fishing theme
+- 🐟 **Fish Image Classification** — CNN model to identify fish species from images  
+- ☁️ **Weather Forecast** — Marine weather data with forecasts, tides, and fishing conditions  
+- 🛒 **Fish Market** — Fishers can list catches; buyers can browse and purchase  
+- ⚠️ **Safety Alerts** — Real-time alerts for weather and marine conditions  
+- 📚 **Fish Library** — Rich database with habitat, season, and usage info  
+- 📊 **Analytics** — Insights on catch trends, pricing, and forecasts  
+- 🔐 **User Authentication** — JWT-secured registration and login system  
 
+---
 
-## Workflow
+## 🧱 Tech Stack
 
-1. **User Authentication**:
-   - Users register/login to access the application
-   - JWT tokens are used for secure authentication
+| Tech | Usage |
+|------|-------|
+| **MongoDB** | Database for users, fish, listings, alerts |
+| **Express.js** | REST API backend |
+| **React.js** | Frontend interface |
+| **Node.js** | Backend runtime |
+| **TensorFlow.js** | CNN fish classification |
+| **JWT** | Authentication |
+| **Tailwind CSS** | Ocean-themed UI styling |
 
-2. **Dashboard**:
-   - Overview of weather, market, and alerts
-   - Quick access to all features
+---
 
-3. **Fish Classification**:
-   - Upload or capture fish image
-   - CNN model identifies the fish species
-   - Displays information about the identified fish
+## 🧭 Workflow
 
-4. **Weather Forecast**:
-   - Current marine conditions
-   - 5-day forecast
-   - Tide information
-   - Fishing advisories
+1. **Authentication**
+   - Secure login/signup with JWT-based access
 
-5. **Market**:
-   - Fishers can list their catch with details
-   - Buyers can browse and contact sellers
-   - Filter and search functionality
+2. **Dashboard**
+   - Weather, market, alerts, and fish insights in one place
 
-6. **Alerts**:
-   - Weather warnings
-   - Marine safety alerts
-   - Market demand notifications
+3. **Fish Identification**
+   - Upload/capture image → CNN model classifies → info is displayed
 
-7. **Fish Library**:
-   - Comprehensive database of fish species
-   - Details on habitat, season, and cooking methods
+4. **Marine Forecast**
+   - Real-time + 5-day conditions, tides, and advisories
 
-8. **Analytics**:
-   - Catch trends
-   - Market price analysis
-   - Forecast accuracy
+5. **Marketplace**
+   - List catches, search listings, contact sellers
 
+6. **Safety Alerts**
+   - Coastal warnings, rough sea alerts, demand shifts
 
-## 🧰 Installation
+7. **Fish Encyclopedia**
+   - Learn fish characteristics, seasons, and culinary info
 
-1. **Clone the repository**:
+8. **Analytics**
+   - Visual data on pricing, predictions, and catch trends
+
+---
+
+## 🚀 Installation
+
 ```bash
+# Clone the repository
 git clone https://github.com/SanyaShresta25/Meenavani.git
-cd meenavani
+cd Meenavani
+
+# Install server dependencies
+cd backend
+npm install
+
+# Install client dependencies
+cd ../frontend
+npm install
+
+# Run both servers
+npm run dev
+```
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome!  
-Feel free to fork the repo and submit a pull request with your improvements.
+Pull requests are welcome!  
+Fork the repository, create a branch, make changes, and submit a PR.
 
 ---
 
 ## 📄 License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+Licensed under the [MIT License](https://opensource.org/licenses/MIT)
 
 ---
 
-### 🧑‍💻 Made with ❤️ by **Sanya Shresta**
+## 👩‍💻 Made with ❤️ by **Sanya Shresta**
+
