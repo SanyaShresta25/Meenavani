@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 50% 98%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 201 94% 49%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 210 40% 90%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 201 94% 49%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 201 94% 49%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 217 32% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 32% 17%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 201 94% 49%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .wave-bg {
+    @apply relative overflow-hidden;
+  }
+
+  .wave-bg::before {
+    content: "";
+    @apply absolute inset-0 bg-wave-pattern opacity-5 animate-wave;
+    background-size: 100% 100%;
+    width: 200%;
+    z-index: 0;
+  }
+
+  .ocean-gradient {
+    @apply bg-gradient-to-r from-ocean-600 to-ocean-700;
+  }
+
+  .azure-gradient {
+    @apply bg-gradient-to-r from-azure-500 to-azure-600;
+  }
+
+  .teal-gradient {
+    @apply bg-gradient-to-r from-teal-500 to-teal-600;
+  }
+
+  /* Enhanced text contrast for better visibility */
+  .text-on-blue {
+    @apply text-white dark:text-white font-medium;
+  }
+
+  .text-on-light-blue {
+    @apply text-ocean-900 dark:text-ocean-50 font-medium;
+  }
+
+  .text-on-dark-blue {
+    @apply text-white dark:text-ocean-100 font-medium;
+  }
+
+  /* High contrast text classes */
+  .high-contrast-text {
+    @apply text-ocean-900 dark:text-white font-medium;
+  }
+
+  .high-contrast-text-light {
+    @apply text-ocean-900 dark:text-ocean-50 font-medium;
+  }
+
+  /* Card and container styles with better contrast */
+  .card-high-contrast {
+    @apply border-2 border-ocean-300 dark:border-ocean-600;
+  }
+
+  /* Button text with better visibility */
+  .btn-text {
+    @apply text-white font-medium;
+  }
+
+  /* Add these new classes for better card visibility */
+  .dashboard-card {
+    @apply relative border-2 shadow-md;
+    background-color: rgba(255, 255, 255, 0.95) !important;
+  }
+
+  .dark .dashboard-card {
+    background-color: rgba(8, 47, 73, 0.95) !important;
+    @apply border-ocean-700;
+  }
+
+  /* Improve text contrast */
+  .card-title {
+    @apply text-ocean-900 dark:text-white font-bold;
+  }
+
+  .card-value {
+    @apply text-2xl font-bold text-ocean-900 dark:text-white;
+  }
+
+  .card-subtitle {
+    @apply text-ocean-800 dark:text-ocean-100 font-medium;
+  }
+}
